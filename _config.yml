@@ -82,13 +82,13 @@ analytics:
 author:
   name             : "Andrei L. Badescu"
   avatar           : "Andrei.png"
-  bio              : "Professor of Actuarial Science  Department of Statistical Sciences University of Toronto"
+  bio              : "Professor of Actuarial Science  
+                      Dept. of Statistical Sciences 
+                      University of Toronto"
+  employer         : "https://www.statistics.utoronto.ca/people/directories/all-faculty/andrei-badescu"
   location         : "Toronto, Canada"
-  employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "http://yourfullgooglescholarurl.com"
-  email            :
-  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
+  googlescholar    : "https://scholar.google.co.uk/citations?user=H_YHjTIAAAAJ&hl=en"
+  email            : "badescu(dot)andrei(at)utoronto(dot)ca"
   uri              :
   bitbucket        :
   codepen          :
@@ -103,7 +103,6 @@ author:
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         :
-  orcid            : "http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
