@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : " Welcome to my homepage"
+title                    : " Welcome to my homepage !"
 title_separator          : "-"
 name                     : &name "Andrei Badescu"
 description              : &description "personal description"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Andrei L. Badescu"
   avatar           : "Andrei.png"
-  bio              : "Professor of Actuarial Science  University of Toronto"
+  bio              : "Professor of Actuarial Science  Department of Statistical Sciences University of Toronto"
   location         : "Toronto, Canada"
   employer         :
   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
