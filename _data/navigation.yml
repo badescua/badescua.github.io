@@ -7,7 +7,7 @@ main:
     url: /students/    
 
   - title: "Teaching"
-    url: /teaching/curs.pdf   
+    url: /teaching/
     
   - title: "CV"
     url: /cv/
