@@ -10,7 +10,7 @@ redirect_from:
 
 ABOUT ME:
 
-Hi, my name is Andrei Badescu and I am a Professor in the Department of Statistical Sciences at University of Toronto. I was born in Bucharest, Romania, where I have studied Mathematics and Economics at Bucharest University of Economic Studies (BSc ’98, MSc ’00). (https://www.ase.ro/index_en.asp)
+Hi, my name is Andrei Badescu and I am a Professor in the Department of Statistical Sciences at University of Toronto. I was born in Bucharest, Romania, where I have studied Mathematics and Economics at [Bucharest University of Economic Studies] (https://www.ase.ro/index_en.asp) (BSc ’98, MSc ’00). 
 
 A data-driven personal website
 ======
