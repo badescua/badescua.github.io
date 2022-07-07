@@ -3,7 +3,7 @@ main:
   - title: "Selected Publications"
     url: /publications/
 
-  - title: "Current Students"
+  - title: "Students"
     url: /students/    
 
   - title: "Teaching"
@@ -12,5 +12,5 @@ main:
   - title: "CV"
     url: /cv/
     
-  - title: "Software"
+  - title: "Our Research Group and Software"
     url: /markdown/
