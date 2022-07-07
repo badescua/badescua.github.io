@@ -10,7 +10,7 @@ redirect_from:
 
 ABOUT ME:
 
-Hi, my name is Andrei Badescu and I am a Professor in the Department of Statistical Sciences at University of Toronto. I was born in Bucharest, Romania, where I have studied Mathematics and Economics at [Bucharest University of Economic Studies](https://www.ase.ro/index_en.asp) (BSc ’98, MSc ’00). 
+Hi, my name is Andrei Badescu and I am a Professor in the Department of Statistical Sciences at University of Toronto. I was born in Bucharest, Romania, where I have studied Mathematics and Economics at [Bucharest University of Economic Studies](https://www.ase.ro/index_en.asp) (BSc ’98, MSc ’00). I moved to Canada in 2000 and I have obtained my PhD ’04 in Actuarial Science  at [Western University](https://www.uwo.ca/stats/), under the supervision of  David Stanford. Following my PhD I have completed a two year postdoctoral fellowship ’06 at [University of Waterloo](https://uwaterloo.ca/statistics-and-actuarial-science/) under the supervision of [Gord Willmot]( https://uwaterloo.ca/statistics-and-actuarial-science/people-profiles/gord-willmot). 
 
 A data-driven personal website
 ======
