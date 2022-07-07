@@ -3,9 +3,9 @@ layout: archive
 permalink: /students/
 author_profile: true
 ---
-Current Students 
+Current Students:
 
-Doctoral students
+Doctoral students:
 
 - [Spark Tseung](https://actsci.utstat.utoronto.ca/author/spark-tseung/)
 - [Sebastian Calcetero](https://actsci.utstat.utoronto.ca/author/sebastian-calcetero/)
