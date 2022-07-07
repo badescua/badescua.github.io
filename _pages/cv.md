@@ -1,5 +1,8 @@
 ---
+---
 layout: archive
-title: "CV"
-permalink: /files/CV_July2022.pdf
+permalink: /CV/
 author_profile: true
+---
+
+Please upload the CV [here]{)
