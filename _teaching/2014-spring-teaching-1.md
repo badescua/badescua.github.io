@@ -1,20 +1,19 @@
 ---
-title: "Undergraduate Teaching experience"
-collection: teaching
-type: "Undergraduate courses"
-permalink: /teaching/2014-spring-teaching-1
-venue: "University 1, Department"
-date: 2014-01-01
-location: "City, Country"
----
+title: "Undergraduate Teaching Experience"
 
-This is a description of a teaching experience. You can use markdown like any other post.
-
-Heading 1
+ACT230 Mathematics of Finance for Non-Actuaries
 ======
-
-Heading 2
+ACT240 Mathematics of Investment and Credit
 ======
-
-Heading 3
+ACT247 Introduction to Life Contingencies
+======
+ACT348 Advanced Life Contingencies
+======
+ACT455 Advanced Topics in Actuarial Science
+======
+ACT451 Loss Models 1
+======
+ACT452 Loss Models 2
+======
+ACT466 Credibility and Simulation
 ======
