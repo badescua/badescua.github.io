@@ -12,5 +12,9 @@ main:
   - title: "CV"
     url: /cv/
     
-  - title: "Our Research Group and Software"
-    url: /markdown/
+  - title: "Research Group"
+    url: /https://actsci.utstat.utoronto.ca/
+
+
+  - title: "Software packages"
+    url: https://github.com/UofTActuarial
