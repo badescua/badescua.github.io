@@ -1,5 +1,5 @@
 ---
-title: "TGraduate Teaching Experience"
+title: "Graduate Teaching Experience"
 permalink: /teaching/2015-spring-teaching-1
 
 location: "City, Country"
