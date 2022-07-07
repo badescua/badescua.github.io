@@ -13,8 +13,7 @@ main:
     url: /cv/
     
   - title: "Research Group"
-    url: /https://actsci.utstat.utoronto.ca/
-
+    url: https://actsci.utstat.utoronto.ca/people-uoftactuarial/
 
   - title: "Software packages"
     url: https://github.com/UofTActuarial
