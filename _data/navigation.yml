@@ -10,7 +10,7 @@ main:
     url: /teaching/
     
   - title: "CV"
-    url: /cv/
+    url: https://badescua.github.io/files/CV_July2022.pdf
     
   - title: "Research Group"
     url: https://actsci.utstat.utoronto.ca/people-uoftactuarial
