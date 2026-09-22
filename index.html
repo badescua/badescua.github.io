@@ -158,7 +158,7 @@
 
     .work-list { border-top: 1px solid var(--line); }
     .work-item {
-      display: grid; grid-template-columns: 120px 1fr auto; gap: 28px; align-items: start;
+      display: grid; grid-template-columns: 120px 1fr; gap: 28px; align-items: start;
       padding: 30px 0; border-bottom: 1px solid var(--line);
     }
     .year { color: var(--teal); font-weight: 800; letter-spacing: .05em; }
@@ -193,7 +193,7 @@
     .people-card ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 14px; }
     .people-card li { color: var(--muted); }
     .people-card strong { display: block; color: var(--ink); }
-    .funding-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .funding-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
     .funding-card { padding: 28px; border-top: 3px solid var(--teal); background: var(--white); box-shadow: 0 8px 28px rgba(7, 26, 45, .055); }
     .funding-card .funding-year { color: var(--teal); font-size: .78rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
     .funding-card h3 { margin: 12px 0 10px; font-size: 1.16rem; line-height: 1.35; }
@@ -252,7 +252,6 @@
       .research-grid { grid-template-columns: 1fr; }
       .people-grid { grid-template-columns: 1fr; }
       .work-item { grid-template-columns: 68px 1fr; gap: 16px; }
-      .paper-link { grid-column: 2; }
       .contact-panel { grid-template-columns: 1fr; }
       .footer-grid { align-items: flex-start; flex-direction: column; }
       .section { padding: 78px 0; }
@@ -300,7 +299,7 @@
           </div>
           <div class="role-line">
             <span><strong>Professor</strong> · Department of Statistical Sciences</span>
-            <span><strong>Associate Editor</strong> · IME &amp; Annals of Actuarial Science</span>
+            <span><strong>Associate Editor</strong> · IME, Annals of Actuarial Science &amp; Risks</span>
           </div>
         </div>
         <div class="portrait-wrap" aria-label="Portrait of Andrei Badescu">
@@ -347,10 +346,10 @@
       <div class="container">
         <div class="section-heading reveal">
           <div>
-            <p class="eyebrow">Selected work</p>
-            <h2>Recent research.</h2>
+            <p class="eyebrow">Publications</p>
+            <h2>Research since 2019.</h2>
           </div>
-          <p>A selection of current work across telematics, reserving, and ratemaking. The complete publication record is available through Google Scholar and the University of Toronto Actuarial Science group.</p>
+          <p>Peer-reviewed and current research across telematics, reserving, ratemaking, insurance analytics, and stochastic risk modelling. Full-text links will be added as repository copies become available.</p>
         </div>
         <div class="work-list">
           <article class="work-item reveal">
@@ -359,75 +358,122 @@
               <h3>A Portfolio-Anchored Frequency–Severity Risk Index for Trip and Driver Assessment Using Telematics Signals</h3>
               <p>Jongtaek Lee, Andrei Badescu &amp; X. Sheldon Lin · ASTIN Bulletin <span class="status">Accepted</span></p>
             </div>
-            <a class="paper-link" href="https://arxiv.org/abs/2603.15839" target="_blank" rel="noopener" aria-label="Open paper">↗</a>
           </article>
           <article class="work-item reveal">
             <div class="year">2026</div>
             <div>
               <h3>Unified Bayesian Collective Reserving Framework with Hierarchical Temporal Smoothing</h3>
-              <p>Hassan Abdelrahman, Andrei Badescu &amp; X. Sheldon Lin · Insurance: Mathematics and Economics <span class="status">Revision requested</span></p>
+              <p>Hassan Abdelrahman, Andrei Badescu &amp; X. Sheldon Lin · Insurance: Mathematics and Economics <span class="status">Under review</span></p>
             </div>
-            <a class="paper-link" href="https://scholar.google.com/citations?hl=en&amp;user=H_YHjTIAAAAJ" target="_blank" rel="noopener" aria-label="View author publication profile">↗</a>
+          </article>
+          <article class="work-item reveal">
+            <div class="year">2026</div>
+            <div>
+              <h3>Marked Cox Models for IBNR Claims Count: Continuous and Discretized Approaches with Dirichlet-Driven Reporting Delays</h3>
+              <p>Hassan Abdelrahman, Andrei L. Badescu, Radu V. Craiu &amp; X. Sheldon Lin · ASTIN Bulletin 56(1): 60–88</p>
+            </div>
+          </article>
+          <article class="work-item reveal">
+            <div class="year">2026</div>
+            <div>
+              <h3>An Effective Bayesian GLM Approach for IBNR Claim Count Estimation</h3>
+              <p>Hassan Abdelrahman, Andrei Badescu &amp; X. Sheldon Lin · North American Actuarial Journal 30(3): 575–598</p>
+            </div>
           </article>
           <article class="work-item reveal">
             <div class="year">2025</div>
             <div>
-              <h3>Assessing driving risk through unsupervised detection of anomalies in telematics time series data</h3>
-              <p>Ian Weng Chan, Andrei L. Badescu &amp; X. Sheldon Lin · ASTIN Bulletin 55: 205–241 <span class="status">Published</span></p>
+              <h3>Assessing Driving Risk Through Unsupervised Detection of Anomalies in Telematics Time Series Data</h3>
+              <p>Ian Weng Chan, Andrei L. Badescu &amp; X. Sheldon Lin · ASTIN Bulletin 55: 205–241</p>
             </div>
-            <a class="paper-link" href="https://actsci.utstat.utoronto.ca/publication/chan-badescu-lin-2025/" target="_blank" rel="noopener" aria-label="Open paper details">↗</a>
-          </article>
-          <article class="work-item reveal">
-            <div class="year">2025</div>
-            <div>
-              <h3>Simplifying Complexities in IBNR Claims Count Estimation with a Bayesian GLM Approach</h3>
-              <p>Hassan Abdelrahman, Andrei L. Badescu &amp; X. Sheldon Lin · North American Actuarial Journal <span class="status">Accepted</span></p>
-            </div>
-            <a class="paper-link" href="https://scholar.google.com/citations?hl=en&amp;user=H_YHjTIAAAAJ" target="_blank" rel="noopener" aria-label="View author publication profile">↗</a>
           </article>
           <article class="work-item reveal">
             <div class="year">2025</div>
             <div>
               <h3>Data Mining of Telematics Data: Unveiling the Hidden Patterns in Driving Behavior</h3>
-              <p>Ian Weng Chan, Spark C. Tseung, Andrei L. Badescu &amp; X. Sheldon Lin · North American Actuarial Journal 29(3): 275–309 <span class="status">Published</span></p>
+              <p>Ian Weng Chan, Spark C. Tseung, Andrei L. Badescu &amp; X. Sheldon Lin · North American Actuarial Journal 29(3): 275–309</p>
             </div>
-            <a class="paper-link" href="https://actsci.utstat.utoronto.ca/publication/chan-tseung-badescu-lin-2024/" target="_blank" rel="noopener" aria-label="Open paper details">↗</a>
           </article>
           <article class="work-item reveal">
             <div class="year">2025</div>
             <div>
               <h3>Claim Reserving via Inverse Probability Weighting: A Micro-Level Chain-Ladder Method</h3>
-              <p>Sebastian Calcetero Vanegas, Andrei L. Badescu &amp; X. Sheldon Lin · European Actuarial Journal 15: 89–135 <span class="status">Published</span></p>
+              <p>Sebastian Calcetero Vanegas, Andrei L. Badescu &amp; X. Sheldon Lin · European Actuarial Journal 15: 89–135</p>
             </div>
-            <a class="paper-link" href="https://arxiv.org/abs/2307.10808" target="_blank" rel="noopener" aria-label="Open paper">↗</a>
           </article>
           <article class="work-item reveal">
             <div class="year">2025</div>
             <div>
               <h3>A Population Sampling Framework for Claim Reserving in General Insurance</h3>
-              <p>Sebastian Calcetero Vanegas, Andrei L. Badescu &amp; X. Sheldon Lin · North American Actuarial Journal <span class="status">Revision requested</span></p>
+              <p>Sebastian Calcetero Vanegas, Andrei L. Badescu &amp; X. Sheldon Lin <span class="status">Submitted</span></p>
             </div>
-            <a class="paper-link" href="https://arxiv.org/abs/2502.15598" target="_blank" rel="noopener" aria-label="Open paper">↗</a>
           </article>
           <article class="work-item reveal">
-            <div class="year">2025</div>
+            <div class="year">2024</div>
             <div>
-              <h3>Marked Cox Models for IBNR Claims Count: Continuous and Discretized Approaches with Dirichlet-Driven Reporting Delays</h3>
-              <p>Hassan Abdelrahman, Andrei L. Badescu, Radu Craiu &amp; X. Sheldon Lin · ASTIN Bulletin <span class="status">In press</span></p>
+              <h3>Effective Experience Rating for Large Insurance Portfolios via Surrogate Modeling</h3>
+              <p>Sebastian Calcetero Vanegas, Andrei L. Badescu &amp; X. Sheldon Lin · Insurance: Mathematics and Economics 118: 25–43</p>
             </div>
-            <a class="paper-link" href="https://scholar.google.com/citations?hl=en&amp;user=H_YHjTIAAAAJ" target="_blank" rel="noopener" aria-label="View author publication profile">↗</a>
           </article>
           <article class="work-item reveal">
             <div class="year">2023</div>
             <div>
-              <h3>Improving risk classification and ratemaking using mixture-of-experts models with random effects</h3>
-              <p>Spark C. Tseung, Ian Weng Chan, Tsz Chai Fung, Andrei L. Badescu &amp; X. Sheldon Lin · Journal of Risk and Insurance</p>
+              <h3>Improving Risk Classification and Ratemaking Using Mixture-of-Experts Models with Random Effects</h3>
+              <p>Spark C. Tseung, Ian Weng Chan, Tsz Chai Fung, Andrei L. Badescu &amp; X. Sheldon Lin · Journal of Risk and Insurance 90: 789–820</p>
             </div>
-            <a class="paper-link" href="https://actsci.utstat.utoronto.ca/publication/tseung-chan-fung-badescu-lin-2023/" target="_blank" rel="noopener" aria-label="Open paper details">↗</a>
+          </article>
+          <article class="work-item reveal">
+            <div class="year">2022</div>
+            <div>
+              <h3>Fitting Censored and Truncated Regression Data Using Mixture-of-Experts Models</h3>
+              <p>Tsz Chai Fung, Andrei L. Badescu &amp; X. Sheldon Lin · North American Actuarial Journal 26(4): 496–520</p>
+            </div>
+          </article>
+          <article class="work-item reveal">
+            <div class="year">2021</div>
+            <div>
+              <h3>LRMoE.jl: A Software Package for Flexible Actuarial Loss Modelling Using Mixture-of-Experts Regression Models</h3>
+              <p>Spark C. Tseung, Andrei L. Badescu, Tsz Chai Fung &amp; X. Sheldon Lin · Annals of Actuarial Science 15(2): 419–440</p>
+            </div>
+          </article>
+          <article class="work-item reveal">
+            <div class="year">2020</div>
+            <div>
+              <h3>A New Class of Severity Regression Models with an Application to IBNR Prediction</h3>
+              <p>Tsz Chai Fung, Andrei L. Badescu &amp; X. Sheldon Lin · North American Actuarial Journal 25(2): 206–231</p>
+            </div>
+          </article>
+          <article class="work-item reveal">
+            <div class="year">2019</div>
+            <div>
+              <h3>A Class of Mixture-of-Experts Models for General Insurance: Theoretical Developments</h3>
+              <p>Tsz Chai Fung, Andrei L. Badescu &amp; X. Sheldon Lin · Insurance: Mathematics and Economics 89: 111–127</p>
+            </div>
+          </article>
+          <article class="work-item reveal">
+            <div class="year">2019</div>
+            <div>
+              <h3>A Class of Mixture-of-Experts Models for General Insurance: Application to Correlated Claim Frequencies</h3>
+              <p>Tsz Chai Fung, Andrei L. Badescu &amp; X. Sheldon Lin · ASTIN Bulletin 49(3): 647–688</p>
+            </div>
+          </article>
+          <article class="work-item reveal">
+            <div class="year">2019</div>
+            <div>
+              <h3>A Marked Cox Model for the Number of IBNR Claims: Estimation and Application</h3>
+              <p>Andrei L. Badescu, Tianle Chen, X. Sheldon Lin &amp; Dameng Tang · ASTIN Bulletin 49(3): 709–739</p>
+            </div>
+          </article>
+          <article class="work-item reveal">
+            <div class="year">2019</div>
+            <div>
+              <h3>Multivariate Cox Hidden Markov Models with an Application to Operational Risk</h3>
+              <p>Tsz Chai Fung, Andrei L. Badescu &amp; X. Sheldon Lin · Scandinavian Actuarial Journal 2019(8): 686–710</p>
+            </div>
           </article>
         </div>
         <div class="more-row">
-          <a class="button secondary" href="https://actsci.utstat.utoronto.ca/author/andrei-l.-badescu/" target="_blank" rel="noopener">View publication profile ↗</a>
+          <a class="button secondary" href="https://scholar.google.com/citations?hl=en&amp;user=H_YHjTIAAAAJ" target="_blank" rel="noopener">View Google Scholar profile ↗</a>
         </div>
       </div>
     </section>
@@ -438,7 +484,7 @@
         <div class="about-copy reveal">
           <p><strong>I joined the University of Toronto in 2006</strong>, following doctoral studies in actuarial science at Western University and postdoctoral work at the University of Waterloo. I became a full professor in 2020.</p>
           <p>My earlier work focused on mathematical risk theory, queueing theory, stochastic fluid flows, and matrix-analytic methods. That foundation continues to shape my current research in claim reserving, ratemaking, insurance data science, and telematics.</p>
-          <p>I served as Director of the Master of Financial Insurance program from 2022 to 2025 and as Interim Chair of the Department of Statistical Sciences in 2024. I am an Associate Editor of <em>Insurance: Mathematics and Economics</em> and the <em>Annals of Actuarial Science</em>.</p>
+          <p>I served as Director of the Master of Financial Insurance program from 2022 to 2025 and as Interim Chair of the Department of Statistical Sciences in 2024. I am an Associate Editor of <em>Insurance: Mathematics and Economics</em> (since 2018), the <em>Annals of Actuarial Science</em> (since 2024), and <em>Risks</em> (since 2026).</p>
           <div class="hero-actions" style="margin-top: 28px">
             <a class="button primary" href="https://www.statistics.utoronto.ca/people/directories/all-faculty/andrei-badescu" target="_blank" rel="noopener">University profile ↗</a>
           </div>
@@ -490,6 +536,9 @@
             </ul>
           </article>
         </div>
+        <div class="role-line reveal" style="margin-top: 30px">
+          <span><strong>MScAC industry supervision</strong> Applied research projects in partnership with Geotab, including collision severity modelling and automated load-weight detection for heavy-duty vehicles.</span>
+        </div>
         <div class="more-row">
           <a class="button secondary" href="https://actsci.utstat.utoronto.ca/" target="_blank" rel="noopener">Visit the U of T Actuarial Science group ↗</a>
         </div>
@@ -503,23 +552,28 @@
             <p class="eyebrow">Current programs</p>
             <h2>Funded research with practical reach.</h2>
           </div>
-          <p>Current projects connect statistical methodology with insurer and mobility applications, including dynamic telematics risk assessment, motif extraction, reserving, and artificial intelligence.</p>
+          <p>Current and recently completed projects connect statistical methodology with insurer and mobility applications, including telematics risk assessment, motif extraction, collision analysis, reserving, and ratemaking.</p>
         </div>
         <div class="funding-grid">
           <article class="funding-card reveal">
-            <div class="funding-year">NSERC · 2026–2031</div>
+            <div class="funding-year">NSERC · 2026–2032</div>
             <h3>Integrating Statistical Modeling and Telematics Analytics for Advanced Insurance Risk Assessment</h3>
-            <p>Discovery Grant · Principal applicant</p>
+            <p>Individual Discovery Grant · Principal investigator</p>
           </article>
           <article class="funding-card reveal">
-            <div class="funding-year">SOA · 2026–2027</div>
+            <div class="funding-year">CAS · 2026–2027</div>
             <h3>Motif Extraction for Driving Behaviour Analysis and Insurance Ratemaking</h3>
-            <p>Research grant · Co-applicant</p>
+            <p>Individual Research Grant · With Sophia Chan</p>
           </article>
           <article class="funding-card reveal">
             <div class="funding-year">CIA · 2026–2027</div>
             <h3>A Frequency–Severity Trip-Level Risk Index for Classification of Telematics Data</h3>
-            <p>Research grant · Principal applicant</p>
+            <p>Academic Research Grant · With Jongtaek Lee</p>
+          </article>
+          <article class="funding-card reveal">
+            <div class="funding-year">CIA · 2025–2026</div>
+            <h3>Enhanced IBNR Reserve Estimation in P&amp;C Insurance Through Bayesian Chain-Ladder Models</h3>
+            <p>Academic Research Grant · With Hassan Abdelrahman</p>
           </article>
         </div>
         <div class="role-line reveal" style="margin-top: 42px">
@@ -547,7 +601,7 @@
           </div>
           <div class="course-group">
             <h3>Supervision</h3>
-            <p>Doctoral and master’s research in reserving, ratemaking, telematics, stochastic modelling, and insurance data science.</p>
+            <p>Doctoral research and applied MScAC projects in reserving, ratemaking, telematics, stochastic modelling, and insurance data science, including industry-partnered projects with Geotab.</p>
           </div>
         </div>
       </div>
