@@ -123,7 +123,7 @@
     .button.secondary { border-color: var(--line); background: var(--white); }
     .portrait-wrap { position: relative; }
     .portrait {
-      position: relative; z-index: 2; aspect-ratio: 4 / 5; width: min(100%, 360px); margin-inline: auto;
+      position: relative; z-index: 2; aspect-ratio: 4 / 5; width: min(100%, 360px); height: clamp(400px, 55vw, 450px); margin-inline: auto;
       border-radius: 180px 180px 28px 28px; object-fit: cover; object-position: center 16%;
       box-shadow: var(--shadow); filter: saturate(.84) contrast(1.03);
     }
