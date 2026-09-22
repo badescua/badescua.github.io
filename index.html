@@ -1,0 +1,610 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Andrei L. Badescu — Professor of Actuarial Science at the University of Toronto. Research in insurance analytics, claim reserving, ratemaking, telematics, and mathematical risk theory.">
+  <meta name="theme-color" content="#102a43">
+  <meta property="og:title" content="Andrei L. Badescu | Actuarial Science">
+  <meta property="og:description" content="Research in insurance analytics, claim reserving, ratemaking, telematics, and mathematical risk theory.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://badescua.github.io/images/Andrei_MFI.jpg">
+  <title>Andrei L. Badescu | Actuarial Science</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Andrei L. Badescu",
+    "jobTitle": "Professor of Actuarial Science",
+    "affiliation": {"@type": "CollegeOrUniversity", "name": "University of Toronto"},
+    "url": "https://badescua.github.io/",
+    "image": "https://badescua.github.io/images/Andrei_MFI.jpg",
+    "sameAs": [
+      "https://scholar.google.com/citations?hl=en&user=H_YHjTIAAAAJ",
+      "https://www.statistics.utoronto.ca/people/directories/all-faculty/andrei-badescu"
+    ]
+  }
+  </script>
+  <style>
+    :root {
+      --navy-950: #071a2d;
+      --navy-900: #102a43;
+      --navy-800: #183b56;
+      --blue: #1e5f8a;
+      --teal: #1d8a82;
+      --teal-soft: #dff3f0;
+      --ink: #182430;
+      --muted: #5d6b78;
+      --line: #dce4ea;
+      --paper: #f6f8fa;
+      --white: #ffffff;
+      --shadow: 0 18px 50px rgba(7, 26, 45, .10);
+      --radius: 20px;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--white);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    body.dark {
+      --ink: #e8eef3;
+      --muted: #aebdca;
+      --line: #2a4358;
+      --paper: #0c2235;
+      --white: #071a2d;
+      --teal-soft: #103d42;
+      --shadow: 0 18px 50px rgba(0, 0, 0, .28);
+    }
+    a { color: inherit; }
+    img { max-width: 100%; display: block; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    .container { width: min(calc(100% - 40px), var(--max)); margin-inline: auto; }
+    .skip-link {
+      position: fixed; left: 16px; top: -80px; z-index: 100;
+      padding: 12px 16px; background: var(--white); border-radius: 10px;
+    }
+    .skip-link:focus { top: 16px; }
+
+    .site-header {
+      position: sticky; top: 0; z-index: 50;
+      background: color-mix(in srgb, var(--white) 88%, transparent);
+      border-bottom: 1px solid color-mix(in srgb, var(--line) 70%, transparent);
+      backdrop-filter: blur(16px);
+    }
+    .nav { height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .brand { text-decoration: none; display: flex; align-items: center; gap: 12px; font-weight: 760; letter-spacing: -.02em; }
+    .brand-mark {
+      width: 38px; height: 38px; display: grid; place-items: center;
+      border-radius: 11px; color: #fff; background: linear-gradient(135deg, var(--navy-800), var(--teal));
+      font-family: Georgia, serif; font-size: 17px;
+    }
+    .nav-links { display: flex; align-items: center; gap: 24px; }
+    .nav-links a { text-decoration: none; color: var(--muted); font-size: .94rem; font-weight: 620; }
+    .nav-links a:hover, .nav-links a:focus-visible { color: var(--teal); }
+    .icon-button {
+      width: 40px; height: 40px; display: grid; place-items: center;
+      border: 1px solid var(--line); border-radius: 12px; background: var(--white); color: var(--ink); cursor: pointer;
+    }
+    .menu-button { display: none; }
+
+    .hero {
+      position: relative; overflow: hidden;
+      padding: clamp(74px, 9vw, 132px) 0 92px;
+      background:
+        radial-gradient(circle at 85% 18%, rgba(29, 138, 130, .18), transparent 25%),
+        linear-gradient(180deg, var(--paper), var(--white));
+    }
+    .hero::before {
+      content: ""; position: absolute; right: -100px; top: 20px; width: 460px; height: 460px;
+      border: 1px solid color-mix(in srgb, var(--teal) 25%, transparent); border-radius: 50%;
+      box-shadow: 0 0 0 70px color-mix(in srgb, var(--teal) 6%, transparent), 0 0 0 140px color-mix(in srgb, var(--blue) 4%, transparent);
+    }
+    .hero-grid { position: relative; display: grid; grid-template-columns: 1.35fr .65fr; gap: clamp(50px, 8vw, 110px); align-items: center; }
+    .eyebrow { margin: 0 0 18px; color: var(--teal); font-size: .78rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+    h1, h2, h3 { line-height: 1.12; letter-spacing: -.035em; }
+    h1 { margin: 0; max-width: 760px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(3.35rem, 7.4vw, 6.8rem); font-weight: 500; }
+    h1 span { color: var(--teal); }
+    .hero-lead { max-width: 710px; margin: 28px 0 32px; color: var(--muted); font-size: clamp(1.08rem, 2vw, 1.28rem); }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+    .button {
+      min-height: 48px; padding: 12px 18px; display: inline-flex; align-items: center; justify-content: center; gap: 9px;
+      border: 1px solid var(--navy-900); border-radius: 12px; text-decoration: none; font-size: .94rem; font-weight: 750;
+      transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+    }
+    .button:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(7, 26, 45, .13); }
+    .button.primary { background: var(--navy-900); color: #fff; }
+    .button.secondary { border-color: var(--line); background: var(--white); }
+    .portrait-wrap { position: relative; }
+    .portrait {
+      position: relative; z-index: 2; aspect-ratio: 4 / 5; width: min(100%, 360px); margin-inline: auto;
+      border-radius: 180px 180px 28px 28px; object-fit: cover; object-position: center 16%;
+      box-shadow: var(--shadow); filter: saturate(.84) contrast(1.03);
+    }
+    .portrait-wrap::after {
+      content: ""; position: absolute; z-index: 1; inset: 25px -18px -18px 25px; margin: auto;
+      border: 1px solid var(--teal); border-radius: 180px 180px 28px 28px; opacity: .45; max-width: 360px;
+    }
+    .role-line { margin-top: 34px; padding-top: 25px; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: 10px 24px; color: var(--muted); font-size: .94rem; }
+    .role-line strong { color: var(--ink); }
+
+    section { scroll-margin-top: 92px; }
+    .section { padding: 106px 0; }
+    .section.tinted { background: var(--paper); }
+    .section-heading { display: grid; grid-template-columns: .42fr 1fr; gap: 60px; align-items: end; margin-bottom: 50px; }
+    .section-heading h2 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp(2.35rem, 5vw, 4.35rem); font-weight: 500; }
+    .section-heading p { margin: 0; max-width: 720px; color: var(--muted); font-size: 1.06rem; }
+
+    .research-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    .research-card {
+      position: relative; min-height: 270px; padding: 32px; overflow: hidden;
+      border: 1px solid var(--line); border-radius: var(--radius); background: var(--white);
+      transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+    }
+    .research-card:hover { transform: translateY(-5px); border-color: color-mix(in srgb, var(--teal) 45%, var(--line)); box-shadow: var(--shadow); }
+    .card-number { color: var(--teal); font: 600 1rem Georgia, serif; }
+    .research-card h3 { margin: 54px 0 13px; font-size: 1.52rem; }
+    .research-card p { margin: 0; color: var(--muted); }
+    .research-card::after {
+      content: ""; position: absolute; width: 120px; height: 120px; right: -55px; top: -55px;
+      border-radius: 50%; background: var(--teal-soft);
+    }
+
+    .work-list { border-top: 1px solid var(--line); }
+    .work-item {
+      display: grid; grid-template-columns: 120px 1fr auto; gap: 28px; align-items: start;
+      padding: 30px 0; border-bottom: 1px solid var(--line);
+    }
+    .year { color: var(--teal); font-weight: 800; letter-spacing: .05em; }
+    .work-item h3 { margin: 0 0 9px; max-width: 760px; font-size: 1.22rem; line-height: 1.35; letter-spacing: -.018em; }
+    .work-item p { margin: 0; color: var(--muted); font-size: .94rem; }
+    .status {
+      display: inline-flex; margin-left: 7px; padding: 2px 8px; vertical-align: 1px;
+      border-radius: 999px; color: var(--teal); background: var(--teal-soft);
+      font-size: .72rem; font-weight: 800; letter-spacing: .04em; text-transform: uppercase;
+    }
+    .paper-link {
+      width: 42px; height: 42px; display: grid; place-items: center; flex: 0 0 auto;
+      border: 1px solid var(--line); border-radius: 50%; text-decoration: none; color: var(--teal);
+      font-size: 1.2rem; transition: background .2s ease, color .2s ease;
+    }
+    .paper-link:hover { background: var(--teal); color: #fff; }
+    .more-row { display: flex; justify-content: flex-end; margin-top: 28px; }
+
+    .about-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(50px, 9vw, 120px); align-items: start; }
+    .about-quote { margin: 0; font: 500 clamp(2rem, 4vw, 3.4rem)/1.2 Georgia, serif; letter-spacing: -.03em; color: var(--navy-800); }
+    body.dark .about-quote { color: #dceaf5; }
+    .about-copy p { margin: 0 0 20px; color: var(--muted); font-size: 1.04rem; }
+    .about-copy strong { color: var(--ink); }
+
+    .programs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .program { padding: 27px; border-left: 3px solid var(--teal); background: var(--white); box-shadow: 0 8px 28px rgba(7, 26, 45, .055); }
+    .program h3 { margin: 0 0 10px; font-size: 1.2rem; }
+    .program p { margin: 0; color: var(--muted); font-size: .94rem; }
+    .people-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 44px; }
+    .people-card { padding: 30px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--white); }
+    .people-card h3 { margin: 0 0 18px; font-size: 1.25rem; }
+    .people-card ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 14px; }
+    .people-card li { color: var(--muted); }
+    .people-card strong { display: block; color: var(--ink); }
+    .funding-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .funding-card { padding: 28px; border-top: 3px solid var(--teal); background: var(--white); box-shadow: 0 8px 28px rgba(7, 26, 45, .055); }
+    .funding-card .funding-year { color: var(--teal); font-size: .78rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+    .funding-card h3 { margin: 12px 0 10px; font-size: 1.16rem; line-height: 1.35; }
+    .funding-card p { margin: 0; color: var(--muted); font-size: .92rem; }
+
+    .teaching-grid { display: grid; grid-template-columns: .76fr 1.24fr; gap: 70px; }
+    .teaching-copy h2 { margin: 0 0 24px; font: 500 clamp(2.4rem, 5vw, 4.1rem)/1.1 Georgia, serif; }
+    .teaching-copy p { color: var(--muted); }
+    .course-groups { display: grid; gap: 28px; }
+    .course-group { padding-bottom: 28px; border-bottom: 1px solid var(--line); }
+    .course-group h3 { margin: 0 0 13px; font-size: .81rem; color: var(--teal); letter-spacing: .12em; text-transform: uppercase; }
+    .course-group p { margin: 0; color: var(--muted); }
+
+    .contact-panel {
+      padding: clamp(38px, 7vw, 72px); display: grid; grid-template-columns: 1fr auto; gap: 50px; align-items: center;
+      border-radius: 28px; color: #fff; background: linear-gradient(135deg, var(--navy-950), var(--navy-800) 60%, #1c6b6a);
+      box-shadow: var(--shadow);
+    }
+    .contact-panel h2 { margin: 0 0 16px; font: 500 clamp(2.3rem, 5vw, 4rem)/1.1 Georgia, serif; }
+    .contact-panel p { max-width: 700px; margin: 0; color: #c9d7e3; }
+    .contact-panel .button { border-color: rgba(255,255,255,.45); background: #fff; color: var(--navy-900); }
+
+    footer { padding: 42px 0; color: var(--muted); font-size: .9rem; }
+    .footer-grid { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 18px; }
+    .footer-links a { text-decoration: none; }
+    .footer-links a:hover { color: var(--teal); }
+
+    .reveal { opacity: 0; transform: translateY(20px); transition: opacity .65s ease, transform .65s ease; }
+    .reveal.visible { opacity: 1; transform: none; }
+
+    @media (max-width: 900px) {
+      .menu-button { display: grid; }
+      .nav-links {
+        position: absolute; left: 20px; right: 20px; top: 72px; display: none; padding: 18px;
+        border: 1px solid var(--line); border-radius: 16px; background: var(--white); box-shadow: var(--shadow);
+      }
+      .nav-links.open { display: grid; gap: 10px; }
+      .nav-links a { padding: 8px 6px; }
+      .theme-button { margin-left: auto; }
+      .hero-grid, .about-grid, .teaching-grid { grid-template-columns: 1fr; }
+      .hero-grid { gap: 62px; }
+      .portrait { width: min(82%, 350px); }
+      .portrait-wrap::after { width: min(82%, 350px); }
+      .section-heading { grid-template-columns: 1fr; gap: 20px; }
+      .programs { grid-template-columns: 1fr; }
+      .funding-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 660px) {
+      .container { width: min(calc(100% - 28px), var(--max)); }
+      .nav { height: 68px; }
+      .brand-name { font-size: .92rem; }
+      .hero { padding-top: 60px; }
+      h1 { font-size: clamp(2.9rem, 16vw, 4.8rem); }
+      .research-grid { grid-template-columns: 1fr; }
+      .people-grid { grid-template-columns: 1fr; }
+      .work-item { grid-template-columns: 68px 1fr; gap: 16px; }
+      .paper-link { grid-column: 2; }
+      .contact-panel { grid-template-columns: 1fr; }
+      .footer-grid { align-items: flex-start; flex-direction: column; }
+      .section { padding: 78px 0; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+      .reveal { opacity: 1; transform: none; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Andrei Badescu — home">
+        <span class="brand-mark" aria-hidden="true">AB</span>
+        <span class="brand-name">Andrei L. Badescu</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#research">Research</a>
+        <a href="#work">Publications</a>
+        <a href="#about">About</a>
+        <a href="#people">People</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button class="icon-button theme-button" id="themeToggle" aria-label="Switch colour theme" title="Switch colour theme">◐</button>
+      <button class="icon-button menu-button" id="menuToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="navLinks">☰</button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-grid container">
+        <div>
+          <p class="eyebrow">Actuarial science · Insurance analytics</p>
+          <h1>Risk models for a <span>data-rich</span> world.</h1>
+          <p class="hero-lead">I am a Professor of Actuarial Science at the University of Toronto. My research connects rigorous stochastic modelling with modern insurance data—from claim reserving and ratemaking to telematics and behavioural risk.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#work">Explore selected work <span aria-hidden="true">↓</span></a>
+            <a class="button secondary" href="https://scholar.google.com/citations?hl=en&amp;user=H_YHjTIAAAAJ" target="_blank" rel="noopener">Google Scholar ↗</a>
+          </div>
+          <div class="role-line">
+            <span><strong>Professor</strong> · Department of Statistical Sciences</span>
+            <span><strong>Associate Editor</strong> · IME &amp; Annals of Actuarial Science</span>
+          </div>
+        </div>
+        <div class="portrait-wrap" aria-label="Portrait of Andrei Badescu">
+          <img class="portrait" src="https://badescua.github.io/images/Andrei_MFI.jpg" alt="Andrei L. Badescu" width="5304" height="7952">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="research">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">Research</p>
+            <h2>From insurance portfolios to individual behaviour.</h2>
+          </div>
+          <p>My work develops statistically principled methods that remain useful in practice—combining probability, Bayesian modelling, latent-state methods, machine learning, and granular insurance data.</p>
+        </div>
+        <div class="research-grid">
+          <article class="research-card reveal">
+            <span class="card-number">01</span>
+            <h3>Claim reserving &amp; pricing</h3>
+            <p>Micro-level and aggregate reserving, reporting delays, IBNR estimation, population-sampling foundations, and coherent links between reserves and premiums.</p>
+          </article>
+          <article class="research-card reveal">
+            <span class="card-number">02</span>
+            <h3>Telematics &amp; behavioural risk</h3>
+            <p>High-frequency driving signals, hidden Markov models, anomaly detection, temporal motifs, collision detection, and dynamic risk indices.</p>
+          </article>
+          <article class="research-card reveal">
+            <span class="card-number">03</span>
+            <h3>Insurance analytics &amp; ratemaking</h3>
+            <p>Mixture-of-experts models, risk classification, random effects, censored and truncated loss data, and interpretable predictive modelling.</p>
+          </article>
+          <article class="research-card reveal">
+            <span class="card-number">04</span>
+            <h3>Mathematical risk theory</h3>
+            <p>Dependence, ruin theory, Markov-additive processes, stochastic fluid flows, matrix-analytic methods, and operational risk.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tinted" id="work">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">Selected work</p>
+            <h2>Recent research.</h2>
+          </div>
+          <p>A selection of current work across telematics, reserving, and ratemaking. The complete publication record is available through Google Scholar and the University of Toronto Actuarial Science group.</p>
+        </div>
+        <div class="work-list">
+          <article class="work-item reveal">
+            <div class="year">2026</div>
+            <div>
+              <h3>A Portfolio-Anchored Frequency–Severity Risk Index for Trip and Driver Assessment Using Telematics Signals</h3>
+              <p>Jongtaek Lee, Andrei Badescu &amp; X. Sheldon Lin · ASTIN Bulletin <span class="status">Accepted</span></p>
+            </div>
+            <a class="paper-link" href="https://arxiv.org/abs/2603.15839" target="_blank" rel="noopener" aria-label="Open paper">↗</a>
+          </article>
+          <article class="work-item reveal">
+            <div class="year">2026</div>
+            <div>
+              <h3>Unified Bayesian Collective Reserving Framework with Hierarchical Temporal Smoothing</h3>
+              <p>Hassan Abdelrahman, Andrei Badescu &amp; X. Sheldon Lin · Insurance: Mathematics and Economics <span class="status">Revision requested</span></p>
+            </div>
+            <a class="paper-link" href="https://scholar.google.com/citations?hl=en&amp;user=H_YHjTIAAAAJ" target="_blank" rel="noopener" aria-label="View author publication profile">↗</a>
+          </article>
+          <article class="work-item reveal">
+            <div class="year">2025</div>
+            <div>
+              <h3>Assessing driving risk through unsupervised detection of anomalies in telematics time series data</h3>
+              <p>Ian Weng Chan, Andrei L. Badescu &amp; X. Sheldon Lin · ASTIN Bulletin 55: 205–241 <span class="status">Published</span></p>
+            </div>
+            <a class="paper-link" href="https://actsci.utstat.utoronto.ca/publication/chan-badescu-lin-2025/" target="_blank" rel="noopener" aria-label="Open paper details">↗</a>
+          </article>
+          <article class="work-item reveal">
+            <div class="year">2025</div>
+            <div>
+              <h3>Simplifying Complexities in IBNR Claims Count Estimation with a Bayesian GLM Approach</h3>
+              <p>Hassan Abdelrahman, Andrei L. Badescu &amp; X. Sheldon Lin · North American Actuarial Journal <span class="status">Accepted</span></p>
+            </div>
+            <a class="paper-link" href="https://scholar.google.com/citations?hl=en&amp;user=H_YHjTIAAAAJ" target="_blank" rel="noopener" aria-label="View author publication profile">↗</a>
+          </article>
+          <article class="work-item reveal">
+            <div class="year">2025</div>
+            <div>
+              <h3>Data Mining of Telematics Data: Unveiling the Hidden Patterns in Driving Behavior</h3>
+              <p>Ian Weng Chan, Spark C. Tseung, Andrei L. Badescu &amp; X. Sheldon Lin · North American Actuarial Journal 29(3): 275–309 <span class="status">Published</span></p>
+            </div>
+            <a class="paper-link" href="https://actsci.utstat.utoronto.ca/publication/chan-tseung-badescu-lin-2024/" target="_blank" rel="noopener" aria-label="Open paper details">↗</a>
+          </article>
+          <article class="work-item reveal">
+            <div class="year">2025</div>
+            <div>
+              <h3>Claim Reserving via Inverse Probability Weighting: A Micro-Level Chain-Ladder Method</h3>
+              <p>Sebastian Calcetero Vanegas, Andrei L. Badescu &amp; X. Sheldon Lin · European Actuarial Journal 15: 89–135 <span class="status">Published</span></p>
+            </div>
+            <a class="paper-link" href="https://arxiv.org/abs/2307.10808" target="_blank" rel="noopener" aria-label="Open paper">↗</a>
+          </article>
+          <article class="work-item reveal">
+            <div class="year">2025</div>
+            <div>
+              <h3>A Population Sampling Framework for Claim Reserving in General Insurance</h3>
+              <p>Sebastian Calcetero Vanegas, Andrei L. Badescu &amp; X. Sheldon Lin · North American Actuarial Journal <span class="status">Revision requested</span></p>
+            </div>
+            <a class="paper-link" href="https://arxiv.org/abs/2502.15598" target="_blank" rel="noopener" aria-label="Open paper">↗</a>
+          </article>
+          <article class="work-item reveal">
+            <div class="year">2025</div>
+            <div>
+              <h3>Marked Cox Models for IBNR Claims Count: Continuous and Discretized Approaches with Dirichlet-Driven Reporting Delays</h3>
+              <p>Hassan Abdelrahman, Andrei L. Badescu, Radu Craiu &amp; X. Sheldon Lin · ASTIN Bulletin <span class="status">In press</span></p>
+            </div>
+            <a class="paper-link" href="https://scholar.google.com/citations?hl=en&amp;user=H_YHjTIAAAAJ" target="_blank" rel="noopener" aria-label="View author publication profile">↗</a>
+          </article>
+          <article class="work-item reveal">
+            <div class="year">2023</div>
+            <div>
+              <h3>Improving risk classification and ratemaking using mixture-of-experts models with random effects</h3>
+              <p>Spark C. Tseung, Ian Weng Chan, Tsz Chai Fung, Andrei L. Badescu &amp; X. Sheldon Lin · Journal of Risk and Insurance</p>
+            </div>
+            <a class="paper-link" href="https://actsci.utstat.utoronto.ca/publication/tseung-chan-fung-badescu-lin-2023/" target="_blank" rel="noopener" aria-label="Open paper details">↗</a>
+          </article>
+        </div>
+        <div class="more-row">
+          <a class="button secondary" href="https://actsci.utstat.utoronto.ca/author/andrei-l.-badescu/" target="_blank" rel="noopener">View publication profile ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <blockquote class="about-quote reveal">“Actuarial models should be mathematically coherent, statistically defensible, and useful for decisions.”</blockquote>
+        <div class="about-copy reveal">
+          <p><strong>I joined the University of Toronto in 2006</strong>, following doctoral studies in actuarial science at Western University and postdoctoral work at the University of Waterloo. I became a full professor in 2020.</p>
+          <p>My earlier work focused on mathematical risk theory, queueing theory, stochastic fluid flows, and matrix-analytic methods. That foundation continues to shape my current research in claim reserving, ratemaking, insurance data science, and telematics.</p>
+          <p>I served as Director of the Master of Financial Insurance program from 2022 to 2025 and as Interim Chair of the Department of Statistical Sciences in 2024. I am an Associate Editor of <em>Insurance: Mathematics and Economics</em> and the <em>Annals of Actuarial Science</em>.</p>
+          <div class="hero-actions" style="margin-top: 28px">
+            <a class="button primary" href="https://www.statistics.utoronto.ca/people/directories/all-faculty/andrei-badescu" target="_blank" rel="noopener">University profile ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tinted" id="people">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">Collaboration &amp; mentorship</p>
+            <h2>Research through people.</h2>
+          </div>
+          <p>My research program is built around long-term collaboration with students and colleagues, with projects designed to connect methodological contribution, reproducible computation, and actuarial relevance.</p>
+        </div>
+        <div class="programs">
+          <article class="program reveal">
+            <h3>Insurance analytics</h3>
+            <p>Flexible regression, mixture-of-experts modelling, latent heterogeneity, and software for modern loss data.</p>
+          </article>
+          <article class="program reveal">
+            <h3>Reserving &amp; pricing</h3>
+            <p>Bayesian and sampling-based foundations for granular reserving, IBNR estimation, and coherent pricing.</p>
+          </article>
+          <article class="program reveal">
+            <h3>Telematics risk</h3>
+            <p>Signal-based detection of risky driving, temporal patterns, collision prediction, and interpretable behavioural indices.</p>
+          </article>
+        </div>
+        <div class="people-grid">
+          <article class="people-card reveal">
+            <h3>Current &amp; recent doctoral researchers</h3>
+            <ul>
+              <li><strong>Jongtaek Lee</strong>Insurance telematics and functional data</li>
+              <li><strong>Pak Hop Chan</strong>Cyber-risk quantification and insurance applications</li>
+              <li><strong>Pat Chimtanoo</strong>Doctoral research, co-supervision</li>
+              <li><strong>Hassan Abdelrahman</strong>Ratemaking, reserving, and Bayesian models</li>
+            </ul>
+          </article>
+          <article class="people-card reveal">
+            <h3>Selected graduates &amp; former researchers</h3>
+            <ul>
+              <li><strong>Sophia Ian Wen Chan</strong>Assistant Professor, Nanyang University</li>
+              <li><strong>Sebastian Calcetero Vanegas</strong>Senior Researcher, CIBC</li>
+              <li><strong>Tsz Chai Fung</strong>Assistant Professor, Georgia State University</li>
+              <li><strong>Spark Tseung</strong>Lead Data Scientist, Reinsurance Group of America</li>
+            </ul>
+          </article>
+        </div>
+        <div class="more-row">
+          <a class="button secondary" href="https://actsci.utstat.utoronto.ca/" target="_blank" rel="noopener">Visit the U of T Actuarial Science group ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="funding">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">Current programs</p>
+            <h2>Funded research with practical reach.</h2>
+          </div>
+          <p>Current projects connect statistical methodology with insurer and mobility applications, including dynamic telematics risk assessment, motif extraction, reserving, and artificial intelligence.</p>
+        </div>
+        <div class="funding-grid">
+          <article class="funding-card reveal">
+            <div class="funding-year">NSERC · 2026–2031</div>
+            <h3>Integrating Statistical Modeling and Telematics Analytics for Advanced Insurance Risk Assessment</h3>
+            <p>Discovery Grant · Principal applicant</p>
+          </article>
+          <article class="funding-card reveal">
+            <div class="funding-year">SOA · 2026–2027</div>
+            <h3>Motif Extraction for Driving Behaviour Analysis and Insurance Ratemaking</h3>
+            <p>Research grant · Co-applicant</p>
+          </article>
+          <article class="funding-card reveal">
+            <div class="funding-year">CIA · 2026–2027</div>
+            <h3>A Frequency–Severity Trip-Level Risk Index for Classification of Telematics Data</h3>
+            <p>Research grant · Principal applicant</p>
+          </article>
+        </div>
+        <div class="role-line reveal" style="margin-top: 42px">
+          <span><strong>Knowledge translation</strong> Invited actuarial and industry presentations</span>
+          <span><strong>Intellectual property</strong> Pending Canadian patent for telematics anomaly detection</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="teaching">
+      <div class="container teaching-grid">
+        <div class="teaching-copy reveal">
+          <p class="eyebrow">Teaching</p>
+          <h2>From foundations to contemporary insurance models.</h2>
+          <p>My teaching spans undergraduate actuarial foundations and graduate work in risk modelling, credibility, simulation, and insurance analytics.</p>
+        </div>
+        <div class="course-groups reveal">
+          <div class="course-group">
+            <h3>Graduate</h3>
+            <p>Insurance Risk Models · Credibility and Simulation</p>
+          </div>
+          <div class="course-group">
+            <h3>Undergraduate</h3>
+            <p>Mathematics of Finance · Mathematics of Investment and Credit · Life Contingencies · Loss Models · Advanced Topics in Actuarial Science</p>
+          </div>
+          <div class="course-group">
+            <h3>Supervision</h3>
+            <p>Doctoral and master’s research in reserving, ratemaking, telematics, stochastic modelling, and insurance data science.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact" style="padding-top: 10px">
+      <div class="container">
+        <div class="contact-panel reveal">
+          <div>
+            <p class="eyebrow" style="color:#74d4ca">Contact</p>
+            <h2>Research, supervision, and collaboration.</h2>
+            <p>For academic enquiries, prospective research collaborations, or information about actuarial science at the University of Toronto, contact me at andrei.badescu@utoronto.ca.</p>
+          </div>
+          <a class="button" href="mailto:andrei.badescu@utoronto.ca">Send an email ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-grid container">
+      <div>© <span id="year"></span> Andrei L. Badescu · University of Toronto</div>
+      <div class="footer-links">
+        <a href="https://scholar.google.com/citations?hl=en&amp;user=H_YHjTIAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+        <a href="https://actsci.utstat.utoronto.ca/" target="_blank" rel="noopener">Actuarial Science Group</a>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const body = document.body;
+    const themeToggle = document.getElementById('themeToggle');
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark' || (!savedTheme && matchMedia('(prefers-color-scheme: dark)').matches)) body.classList.add('dark');
+
+    themeToggle.addEventListener('click', () => {
+      body.classList.toggle('dark');
+      localStorage.setItem('theme', body.classList.contains('dark') ? 'dark' : 'light');
+    });
+    menuToggle.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', String(open));
+      menuToggle.textContent = open ? '×' : '☰';
+    });
+    navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      menuToggle.textContent = '☰';
+    }));
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+    }, { threshold: .08 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
